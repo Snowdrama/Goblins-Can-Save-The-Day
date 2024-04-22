@@ -1,0 +1,45 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bncnocshihlco"]
+
+[ext_resource type="Texture2D" uid="uid://bal1h6w1j2o3c" path="res://icon.svg" id="1_bix64"]
+[ext_resource type="Texture2D" uid="uid://c7l05b1hgoltg" path="res://UI/KenneyUI/blue_button09.png" id="2_v8fia"]
+[ext_resource type="Texture2D" uid="uid://dnfxgbo4qf33u" path="res://UI/KenneyUI/blue_button10.png" id="3_xqjym"]
+[ext_resource type="Texture2D" uid="uid://sonw1jq3ev2g" path="res://UI/KenneyUI/green_button07.png" id="4_wni8c"]
+[ext_resource type="Texture2D" uid="uid://dvcev83cm26c2" path="res://UI/KenneyUI/green_button08.png" id="5_ap6md"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bix64")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_v8fia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xqjym")
+}],
+"loop": false,
+"name": &"idle_0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_wni8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ap6md")
+}],
+"loop": true,
+"name": &"idle_1",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]

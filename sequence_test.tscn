@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://dllr2brbitx85"]
+
+[ext_resource type="Texture2D" uid="uid://c2hfl16wqv83e" path="res://Tools/Sequence/Examples/portraits/cha 1/image/pl1 happy.png" id="1_ffmpl"]
+[ext_resource type="Script" path="res://Tools/Sequence/Examples/SequenceCharacter.cs" id="2_n74gu"]
+[ext_resource type="Texture2D" uid="uid://dy6ufseu6ckig" path="res://Tools/Sequence/Examples/portraits/cha 2/image/pl2 happy.png" id="3_sbqpg"]
+[ext_resource type="Texture2D" uid="uid://bycods7y51sav" path="res://Tools/Sequence/Examples/portraits/cha 3/image/pl3 happy.png" id="4_nlj1o"]
+[ext_resource type="Texture2D" uid="uid://dofqsnkepl56x" path="res://Tools/Sequence/Examples/portraits/cha 4/image/pl4 happy.png" id="5_4tt3f"]
+
+[node name="SequenceTest" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 211.0
+offset_right = 859.0
+texture = ExtResource("1_ffmpl")
+expand_mode = 2
+stretch_mode = 5
+script = ExtResource("2_n74gu")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 430.0
+offset_right = 1078.0
+texture = ExtResource("3_sbqpg")
+expand_mode = 2
+stretch_mode = 5
+script = ExtResource("2_n74gu")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 720.0
+offset_right = 1368.0
+texture = ExtResource("4_nlj1o")
+expand_mode = 2
+stretch_mode = 5
+script = ExtResource("2_n74gu")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = -108.0
+offset_right = 540.0
+texture = ExtResource("5_4tt3f")
+expand_mode = 2
+stretch_mode = 5
+script = ExtResource("2_n74gu")

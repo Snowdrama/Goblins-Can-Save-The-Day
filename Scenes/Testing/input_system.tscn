@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbxmaumn2m5sn"]
+
+[ext_resource type="Script" path="res://Scripts/VirtualCursorSystem.cs" id="1_c3arv"]
+[ext_resource type="Script" path="res://Scripts/VirtualCursorToggle.cs" id="2_difwx"]
+[ext_resource type="SpriteFrames" uid="uid://c07a11j4we2eu" path="res://Scripts/cursor_sprite_frames.tres" id="3_vy0dy"]
+[ext_resource type="Script" path="res://Scripts/VirtualCursor.cs" id="4_53tcx"]
+
+[node name="InputSystem" type="CanvasLayer"]
+layer = 2
+script = ExtResource("1_c3arv")
+
+[node name="VirtualCursorToggle" type="Node" parent="."]
+script = ExtResource("2_difwx")
+
+[node name="VirtualCursor" type="AnimatedSprite2D" parent="VirtualCursorToggle"]
+position = Vector2(3, 0)
+scale = Vector2(0.2, 0.2)
+sprite_frames = ExtResource("3_vy0dy")
+offset = Vector2(128, 128)
+script = ExtResource("4_53tcx")
+cursorAccelerationSpeed = 2.0

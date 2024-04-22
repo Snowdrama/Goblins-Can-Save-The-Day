@@ -1,0 +1,104 @@
+[gd_scene load_steps=5 format=3 uid="uid://ci7prod6j4sq"]
+
+[ext_resource type="Script" path="res://Scripts/WorldMap.cs" id="1_8eouh"]
+[ext_resource type="Texture2D" uid="uid://bal1h6w1j2o3c" path="res://icon.svg" id="2_gv0ob"]
+[ext_resource type="Script" path="res://Scripts/WorldMapNode.cs" id="3_5hnay"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6v284"]
+radius = 85.0
+
+[node name="WorldMap" type="Node"]
+script = ExtResource("1_8eouh")
+linkRange = 500.0
+
+[node name="WorldMapNode" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(530, 263)
+texture = ExtResource("2_gv0ob")
+script = ExtResource("3_5hnay")
+
+[node name="Area2D" type="Area2D" parent="WorldMapNode"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldMapNode/Area2D"]
+shape = SubResource("CircleShape2D_6v284")
+
+[node name="WorldMapNode2" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(280, 508)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gv0ob")
+script = ExtResource("3_5hnay")
+
+[node name="Area2D" type="Area2D" parent="WorldMapNode2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldMapNode2/Area2D"]
+shape = SubResource("CircleShape2D_6v284")
+
+[node name="WorldMapNode3" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(176, 87)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gv0ob")
+script = ExtResource("3_5hnay")
+
+[node name="Area2D" type="Area2D" parent="WorldMapNode3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldMapNode3/Area2D"]
+shape = SubResource("CircleShape2D_6v284")
+
+[node name="WorldMapNode4" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(712, 90)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gv0ob")
+script = ExtResource("3_5hnay")
+
+[node name="Area2D" type="Area2D" parent="WorldMapNode4"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldMapNode4/Area2D"]
+shape = SubResource("CircleShape2D_6v284")
+
+[node name="WorldMapNode5" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(917, 171)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gv0ob")
+script = ExtResource("3_5hnay")
+
+[node name="Area2D" type="Area2D" parent="WorldMapNode5"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldMapNode5/Area2D"]
+shape = SubResource("CircleShape2D_6v284")
+
+[node name="WorldMapNode6" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(860, 330)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_gv0ob")
+script = ExtResource("3_5hnay")
+
+[node name="Area2D" type="Area2D" parent="WorldMapNode6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WorldMapNode6/Area2D"]
+shape = SubResource("CircleShape2D_6v284")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_top = 0.71
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.0800171
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+scroll_active = false
